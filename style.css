@@ -1,0 +1,265 @@
+body{
+    /* background-color: #B9E1D9; */
+    /* background-size: 20px 20px;
+    background-image:
+    linear-gradient(to right, grey 0.1px, transparent 1px),
+    linear-gradient(to bottom, grey 0.1px, transparent 1px); */
+
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, grey 1.5px, #B9E1D9 1px);
+    font-family: 'Poppins'
+}
+
+.whitebox-container{
+    width: 85%; 
+    margin-top: 85px; 
+    margin-left: auto; 
+    margin-right: auto;
+    position: relative;   
+    background: #F8F8F8;
+    padding: 30px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 20px;  
+    border: 2.5px solid black; 
+}
+
+.whitebox-container .top-circle{
+        position: absolute;
+        top: -6em;
+        left: -6em;
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        background: #FC9398;
+        border: 2.5px solid black;
+}
+
+.nav-item{
+    text-align: right;
+}
+
+.navbar .nav-item .nav-link{
+    color: black;
+    font-size: 1.1rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.navbar .nav-item .nav-link:hover{
+    color: black;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+
+.navbar-toggler-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.padding-img{
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 2em;
+}
+
+
+.img-darin{
+    width: 250px;
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+#text-hello{
+    margin-top: 4vw;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#darin1:hover #darin2:after {
+    content: "Amanda Zakiya";
+}
+#darin1{
+    background-color: #F6ED9F;
+}
+
+#highlight{
+    background-color: rgb(243, 240, 209);
+    font-weight: 600;
+}
+
+
+span.moving-hand {
+    animation-name: wave-animation;    
+    animation-duration: 2.5s;          
+    animation-iteration-count: infinite;    
+    transform-origin: 70% 70%;         
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate(  0.0deg) }
+     10% { transform: rotate(-10.0deg) }   
+     20% { transform: rotate( 12.0deg) }
+     30% { transform: rotate(-10.0deg) }
+     40% { transform: rotate(  9.0deg) }
+     50% { transform: rotate(  0.0deg) }
+    100% { transform: rotate(  0.0deg) }
+  }
+
+#text-aboutdesc{
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+#text-fasilkom a{
+    background-color: rgb(243, 240, 209);
+    color: black;
+    text-decoration-color: #FC9398;
+}
+
+.btn{
+    color: black;
+    border: 2px solid #BDA9E8;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+.btn:hover{
+    border-radius: 50px;
+    color: white;
+    background: #BDA9E8;
+}
+
+.btn-2{
+    margin-left: 1vw;
+}
+
+#title-section{
+    padding-left: 3.5em;
+    padding-right: 4em;
+    padding-top: 1.5em;
+    font-size: 1.4rem;
+    font-weight: 600; 
+}
+
+u{
+    text-decoration: none;
+    border-bottom: 3px solid #FC9398;
+}
+
+#year{
+    color:gray;
+    padding-left: 10em;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+#text-university{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#text-list{
+    padding-left: 1em;
+    font-size: 0.8rem;
+}
+
+ul.content-list{
+    list-style: none;
+}
+
+ul.content-list li::before {
+    content: "\2022";
+    color: #FC9398;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+@media (max-width: 64em) {
+
+    .whitebox-container{
+        margin-top: 75px;
+    }
+
+    .whitebox-container .top-circle{
+        position: absolute;
+        top: -3em;
+        left: -3em;
+        height: 90px;
+        width: 90px;
+        border-radius: 100%;
+        background: #FC9398;
+        border: 2.5px solid black;
+    }
+
+    .navbar .nav-item .nav-link{
+        color: black;
+        font-size: 0.8rem;
+        font-family: 'Poppins';
+        font-weight: bold;
+    }
+
+    .padding-img{
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+    }
+
+    .img-darin{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        border-radius: 100%;
+        border: 3px solid black;
+    }
+
+    #text-hello{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #text-aboutdesc{
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .btn{
+        font-size: 0.7em;
+    }
+
+    .button-about{
+        display: flex; justify-content: center
+    }
+
+    #title-section{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #year{
+        padding-left: 0em;
+        float: right;
+        font-weight: 400;
+        font-size: 0.6rem;
+    }
+
+    #text-university{
+        font-size: 0.6rem;
+    }
+    
+    #text-list{
+        justify-content: center;
+        font-size: 0.5rem;
+    }
+}
