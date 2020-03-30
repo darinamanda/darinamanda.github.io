@@ -93,7 +93,7 @@ body{
 
 #highlight{
     background-color: rgb(243, 240, 209);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
@@ -162,9 +162,9 @@ u{
     font-size: 0.9rem;
 }
 
-#text-university{
+#text-title2{
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #text-list{
@@ -174,6 +174,7 @@ u{
 
 ul.content-list{
     list-style: none;
+    
 }
 
 ul.content-list li::before {
@@ -191,7 +192,7 @@ ul.content-list li::before {
     border: 2px solid #BDA9E8;
     font-weight: 500;
     padding: 0.5em;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     margin: 0.5em;
     border-radius: 4px;
 }
@@ -201,7 +202,59 @@ ul.content-list li::before {
    display: flex;
    margin-left: auto;
    margin-right: auto;
+   width: 85%;
 }
+
+.interest-list{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+
+.timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    
+}
+.timeline-date {
+    width: 110px;
+    float: left;
+    margin-top: 0.5em;
+    font-style: italic;
+    padding-right: 0.5em;
+    color:gray;
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+.timeline-content {
+    width: 75%;
+    float: left;
+    border-left: 3px #e5e5d1 solid;
+    padding-left: 30px;
+}
+.timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #FC9398;
+    position: absolute;
+    left: 106px;
+    top: 0.5em;
+    border-radius: 100%;
+}
+
+.content-list-exp{
+    margin-bottom: 2em;
+}
+
+#stacks{
+    font-weight: 600;
+}
+
 
 @media (max-width: 64em) {
 
@@ -257,12 +310,14 @@ ul.content-list li::before {
     }
 
     .button-about{
-        display: flex; justify-content: center
+        display: flex; 
+        justify-content: center;
     }
 
     #title-section{
         font-size: 1rem;
-        text-align: center;
+        display: flex;
+        justify-content: center
     }
 
     #year{
@@ -272,7 +327,7 @@ ul.content-list li::before {
         font-size: 0.6rem;
     }
 
-    #text-university{
+    #text-title2{
         font-size: 0.6rem;
     }
     
@@ -281,9 +336,36 @@ ul.content-list li::before {
         font-size: 0.5rem;
     }
 
+    .skills{
+        width: 80%;
+     }
+
     #skill-list{
         padding: 0.5em;
         font-size: 0.5em;
         margin: 0.3em;
+    }
+
+    .interest-list{
+        font-size: 0.5em;
+    }
+
+    .timeline-content {
+        width: 100%;
+        border-left: none;
+        padding-left: 0px;
+    }
+    .timeline-content:before {
+        display: none;
+    }
+
+    .timeline-date {
+        font-weight: 400;
+        font-size: 0.5rem;
+    }
+    .timeline > li {
+        margin-left: -2em;
+        margin-right: auto;
+        
     }
 }
