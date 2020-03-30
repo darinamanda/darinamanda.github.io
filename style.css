@@ -32,13 +32,24 @@ body{
 
 .whitebox-container .top-circle{
         position: absolute;
-        top: -6em;
-        left: -6em;
+        top: -5em;
+        left: -7em;
         height: 150px;
         width: 150px;
         border-radius: 100%;
         background: #FC9398;
         border: 2.5px solid black;
+}
+
+#nav-toggle-button{
+    background-color: rgb(243, 240, 209);
+    border: 2.5px solid black;
+    width: auto;
+    height: 4vh;
+}
+
+.navbar{
+    background-color: #F8F8F8;
 }
 
 .nav-item{
@@ -67,14 +78,14 @@ body{
 }
 
 .padding-img{
-    padding-left: 4em;
+    padding-left: 6em;
     padding-right: 4em;
     padding-top: 2em;
 }
 
 
 .img-darin{
-    width: 250px;
+    width: 225px;
     border-radius: 100%;
     border: 3px solid black;
 }
@@ -256,6 +267,70 @@ ul.content-list li::before {
     font-weight: 600;
 }
 
+#project-number{
+    padding-left: 6em;
+    text-align: right;
+    color: #DB6FA3;
+}
+
+.img-project{
+    padding-left: 3em;
+    align-content: right;
+    
+}
+
+.img-phone{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30vh;
+    width: auto;
+}
+
+#project-category{
+    color: #DB6FA3;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin: 0;
+    padding-top: 1.5em;
+}
+
+#project-category-2{
+    color: #DB6FA3;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin: 0;
+    padding-top: 3em;
+}
+
+#project-title{
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+#project-desc{
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+#project-stacks{
+    text-align: center;
+    color: black;
+    border: 2px solid #BDA9E8;
+    font-weight: 500;
+    padding: 0.5em;
+    font-size: 0.6rem;
+    border-radius: 4px;
+    margin: 0.5em
+}
+.p-stacks{
+    justify-content: left;
+    display: flex;
+    width: 100%;
+}
+
 
 @media (max-width: 64em) {
 
@@ -368,5 +443,51 @@ ul.content-list li::before {
         margin-left: -2em;
         margin-right: auto;
         
+    }
+    #project-number{
+        display: none;
+    }
+    .img-project{
+        padding-left: 0em;
+        display: block;
+        justify-content: center;
+    }
+
+    #project-category{
+        font-size: 0.6rem;
+        text-align: center;
+        padding-top: 1em;
+        margin: 1em;
+    }
+
+    #project-category-2{
+        font-size: 0.6rem;
+        margin: 1em;
+        text-align: center;
+        padding-top: 1em;
+    }
+    
+    #project-title{
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    
+    #project-desc{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    .p-stacks{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+
+    #project-stacks{
+        font-size: 0.5em;
+    }
+
+    .navbar{
+        background-color: #F8F8F8;
+        opacity: 100%;
     }
 }
