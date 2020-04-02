@@ -41,6 +41,17 @@ body{
         border: 2.5px solid black;
 }
 
+.whitebox-container .bottom-circle{
+    position: absolute;
+    bottom: -5em;
+    right: -7em;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background: #FC9398;
+    border: 2.5px solid black;
+}
+
 #nav-toggle-button{
     background-color: rgb(243, 240, 209);
     border: 2.5px solid black;
@@ -331,6 +342,36 @@ ul.content-list li::before {
     width: 100%;
 }
 
+#ps-text{
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+#award-title{
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+#award-desc{
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+#backtop-button {
+    bottom: 3em;
+    right: 2em;
+    cursor:pointer;
+    position: fixed;
+    visibility: hidden;
+    width: auto;
+    height: 10vh;
+}
+
+#backtop-button.show{
+    visibility: visible;
+}
+
 
 @media (max-width: 64em) {
 
@@ -339,14 +380,17 @@ ul.content-list li::before {
     }
 
     .whitebox-container .top-circle{
-        position: absolute;
         top: -3em;
         left: -3em;
         height: 90px;
         width: 90px;
-        border-radius: 100%;
-        background: #FC9398;
-        border: 2.5px solid black;
+    }
+
+    .whitebox-container .bottom-circle{
+        bottom: -3em;
+        right: -3em;
+        height: 90px;
+        width: 90px;
     }
 
     .navbar .nav-item .nav-link{
@@ -479,7 +523,6 @@ ul.content-list li::before {
     .p-stacks{
         justify-content: center;
         display: flex;
-        width: 100%;
     }
 
     #project-stacks{
@@ -489,5 +532,28 @@ ul.content-list li::before {
     .navbar{
         background-color: #F8F8F8;
         opacity: 100%;
+    }
+
+    #ps-text{
+        font-size: 0.5rem;
+    }
+
+    #award-title{
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    #award-desc{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    #backtop-button {
+        bottom: 3em;
+        right: 2em;
+        cursor:pointer;
+        position: fixed;
+        visibility: hidden;
+        width: auto;
+        height: 7vh;
     }
 }
