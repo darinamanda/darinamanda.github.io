@@ -144,7 +144,7 @@ span.moving-hand {
     font-size: 0.9rem;
 }
 
-#text-fasilkom a{
+#text-link a{
     background-color: rgb(243, 240, 209);
     color: black;
     text-decoration-color: #FC9398;
@@ -373,7 +373,7 @@ ul.content-list li::before {
     visibility: visible;
 }
 
-a, a:hover {
+.socialbtns a, .socialbtns a:hover {
 	text-decoration: none;
 }
 
@@ -409,6 +409,10 @@ a, a:hover {
 .copyright{
     font-size: 0.8rem;
 }
+
+/* .text-link{
+    color: #000;
+} */
 
 
 @media (max-width: 64em) {
